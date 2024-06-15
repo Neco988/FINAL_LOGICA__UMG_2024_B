@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Validation and Multiplication</title>
+    <script type="text/javascript">
+        function validateAndMultiply() {
+            var input1 = parseFloat(document.getElementById("input1").value);
+            var input2 = parseFloat(document.getElementById("input2").value);
+            var input3 = parseFloat(document.getElementById("input3").value);
+
+            if (input1 < input3 || input1 == input3) {
+                var result = input1 * input2 * input3;
+                alert("The result of multiplication is: " + result);
+            } else {
+                alert("The first input must be less than or equal to the third input.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Input Validation and Multiplication</h1>
+    <label for="input1">Input 1:</label>
+    <input type="number" id="input1" name="input1"><br><br>
+    
+    <label for="input2">Input 2:</label>
+    <input type="number" id="input2" name="input2"><br><br>
+    
+    <label for="input3">Input 3:</label>
+    <input type="number" id="input3" name="input3"><br><br>
+    
+    <button type="button" onclick="validateAndMultiply()">Validate and Multiply</button>
+    <button type="button">Button 2</button>
+</body>
+</html>
+ 
